@@ -39,3 +39,9 @@ return
 ^8:: ; Ctrl + 8
 Send, access-list 1 permit any
 return
+^9::
+Send, interface GigabitEthernet0/0
+return
+^0::
+Send, ip access-group 1 out
+return
